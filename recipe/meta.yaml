@@ -1,17 +1,17 @@
 {% set name = "adjustText" %}
-{% set version = "0.7.3.1" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/Phlya/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 16797f497e9a76ac0eeb5261d121e90a36344e4ff33cf71a6a401777cacfd83c
+  url: https://github.com/Phlya/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: 95528b382ef5ac468d72f6d7bbacc4ea972f44ed0aad701108ef06ac0dd48a04
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
 
 test:
   imports:
-    - adjustText 
+    - adjustText
 
 about:
   home: https://github.com/Phlya/adjustText
@@ -38,4 +38,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - phue 
+    - phue
