@@ -1,5 +1,5 @@
 {% set name = "adjustText" %}
-{% set version = "1.0.4" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Phlya/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 3aad0ae808f1cdd1b4f8d8ccbf933b414cb080d6bf000c4bcb2d927b1ae98c6f
+  sha256: 0b1ee9a15536ae1479c4c21e4fcb6ca49cf6e1a111c96d9d790fcf5d44e9c077
 
 build:
   noarch: python
